@@ -606,6 +606,7 @@ export class AgendaInstructorComponent implements OnInit, OnDestroy {
                   (cantidadInstructores * cantidadHoras)
               )
             : 0;
+        console.log(this.horas) 
       });
   }
 

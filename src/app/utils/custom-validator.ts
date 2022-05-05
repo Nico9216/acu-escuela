@@ -1,4 +1,4 @@
-import { FormGroup } from '@angular/forms';
+import { AbstractControl, FormGroup } from '@angular/forms';
 
 export function ValidateFechaPosterior(controlName: string, matchingControlName: string) {
     return (formGroup: FormGroup) => {
@@ -155,3 +155,13 @@ function clean_ci(ci) {
     return ci.replace(/\D/g, '');
 }
 
+// -----------------
+export function EsMayorA30Dias(control:AbstractControl){
+    const value= control.value;
+    if (value !=null){
+        console.log(value)
+    }
+    else{
+        return null;
+    }
+}
